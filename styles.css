@@ -69,20 +69,38 @@ body {
   font-size: 13px;
   color: #444;
 }
-
 #playlist-list {
   list-style: none;
   padding: 0;
-  margin: 15px 0 0 0;
+  margin: 15px 0;
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  max-height: 300px; /* limits vertical height */
+  overflow-y: auto; /* scroll if too long */
 }
 
 #playlist-list li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+  padding: 10px 12px; /* smaller height for compact list */
+  border-bottom: 1px solid #e0e0e0;
   cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+#playlist-list li:last-child {
+  border-bottom: none;
+}
+
+#playlist-list li:hover {
+  background: #e3f2fd;
 }
 
 #playlist-list li.active {
   background: #1976d2;
   color: white;
+  font-weight: 500;
+}
+#playlist-list li::before {
+content: "🎵"; /* custom bullet */
+margin-right: 10px;
 }
