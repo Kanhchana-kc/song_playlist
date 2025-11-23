@@ -249,6 +249,12 @@ const songs = [
     cover: 'images/cover1.jpg',
   },
   {
+    title: 'A Little Love',
+    artist: 'Fiona Fung',
+    src: 'songs/song01.mp3',
+    cover: 'images/cover01.jpg',
+  },
+  {
     title: 'នឹកផ្ទះ',
     artist: 'ឱក​ សុគន្ធកញ្ញា',
     src: 'songs/song2.mp3',
